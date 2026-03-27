@@ -74,27 +74,33 @@
             }
             /* END - Custom Runner Styles */
             
-        </style>
+        <style>
+        /* This makes the page background black */
+        body {
+            background-color: #000000 !important;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
 
-        <!-- Custom PostStyle code is injected here -->
+        /* This makes the GameMaker container black */
+        #gm4html5_div_id {
+            background-color: #000000 !important;
+        }
         
-        <!-- Builtin injector for injecting flurry analytics code -->
-        
-    </head>
+        /* This ensures the game canvas itself doesn't have a border */
+        canvas {
+            image-rendering: pixelated; /* Optional: keeps pixel art sharp */
+            -webkit-interpolation-mode: nearest-neighbor;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
 
-    <!-- Custom PostHead code is injected here -->
-    background-color: #000000 !important;
-    		margin: 0;
-    		padding: 0;
-
-    <!-- Custom PreBody code is injected here -->
-    
-
-    <body>
-        <!-- Custom BodyStart code is injected here -->
-        
-
-        <div class="gm4html5_div_class" id="gm4html5_div_id">
+<body>
+    <div class="gm4html5_div_class" id="gm4html5_div_id">
+        </div>
             
             <!-- Builtin injector for splash screen -->
             
